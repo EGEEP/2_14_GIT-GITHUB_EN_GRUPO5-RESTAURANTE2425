@@ -79,7 +79,7 @@ public class BaseModel {
             deleteFields = String.format("%s %s like '%s' AND", deleteFields, columnNames.get(i), elements.get(i));
         }
         deleteFields = String.format("%s %s = '%s'", deleteFields, columnNames.get(columnNames.size()-1), elements.get(elements.size()-1));
-        String sql = String.format("delete from %s where%s", tabla, deleteFields);
+        String sql = String.format("delete from %s where%s EnekoG", tabla, deleteFields);
         return sql;
     
     }
